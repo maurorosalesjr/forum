@@ -8,10 +8,10 @@ function PostDetail(props){
     <React.Fragment>
       <h1>Post Detail</h1>
       <h3>{post.headline}</h3>
-      <p><em>{post.name}</em></p>
       <p>{post.body}</p>
+      <p>-<em>{post.name}</em></p>
       <button onClick={ props.onClickingEdit }>Update Post</button> 
-      <button onClick={()=> onClickingDelete(post.id) }>Close Post</button> 
+      <button onClick={()=> onClickingDelete(post.id) }>Delete Post</button> 
       <hr/>
     </React.Fragment>
   );
